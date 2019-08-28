@@ -1,0 +1,40 @@
+{
+    "name": "dowadidi/hash",
+    "description": "Twig filter for hashing. ",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "hash"
+    ],
+    "support": {
+        "docs": "https://github.com/dowadidi/craft-hash/blob/master/README.md",
+        "issues": "https://github.com/dowadidi/craft-hash/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diederik Van Hoorebeke",
+            "homepage": "https://github.com/dowadidi"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "dowadidi\\hash\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Hash",
+        "handle": "hash",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/dowadidi/craft-hash/master/CHANGELOG.md",
+        "class": "dowadidi\\hash\\Hash"
+    }
+}
