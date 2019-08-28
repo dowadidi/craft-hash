@@ -21,7 +21,6 @@ use Craft;
  */
 class CraftHashTwigExtension extends \Twig_Extension
 {
-
     public function getName()
     {
         return 'CraftHash';
@@ -34,8 +33,11 @@ class CraftHashTwigExtension extends \Twig_Extension
         ];
     }
 
-    public function hash($text = random_int(0,getrandmax()), $algo = "md5")
+    public function hash($text = null, $algo = "md5")
     {
+        if ($text == null) {
+            $text = random_int(0, getrandmax());
+        }
         $result = hash($algo, $text);
         return $result;
     }

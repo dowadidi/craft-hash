@@ -28,7 +28,7 @@ use yii\base\Event;
 class CraftHash extends Plugin
 {
     public static $plugin;
-    public $schemaVersion = '0.0.1';
+    public $schemaVersion = '0.0.2';
 
     public function init()
     {
