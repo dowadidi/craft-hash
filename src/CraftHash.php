@@ -1,6 +1,6 @@
 <?php
 /**
- * Hash plugin for Craft CMS 3.x
+ * Craft-Hash plugin for Craft CMS 3.x
  *
  * Twig filter for hashing.
  *
@@ -8,25 +8,24 @@
  * @copyright Copyright (c) 2019 Diederik Van Hoorebeke
  */
 
-namespace dowadidi\hash;
+namespace dowadidicrafthash\crafthash;
 
-use dowadidi\hash\twigextensions\HashTwigExtension;
+use dowadidicrafthash\crafthash\twigextensions\CraftHashTwigExtension;
 
 use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
 
 use yii\base\Event;
 
 /**
- * Class Hash
+ * Class CraftHash
  *
  * @author    Diederik Van Hoorebeke
- * @package   Hash
+ * @package   CraftHash
  * @since     0.0.1
  *
  */
-class Hash extends Plugin
+class CraftHash extends Plugin
 {
     public static $plugin;
     public $schemaVersion = '0.0.1';
@@ -36,7 +35,6 @@ class Hash extends Plugin
         parent::init();
         self::$plugin = $this;
 
-        Craft::$app->view->registerTwigExtension(new HashTwigExtension());
+        Craft::$app->view->registerTwigExtension(new CraftHashTwigExtension());
     }
-
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Hash plugin for Craft CMS 3.x
+ * Craft-Hash plugin for Craft CMS 3.x
  *
  * Twig filter for hashing.
  *
@@ -8,23 +8,23 @@
  * @copyright Copyright (c) 2019 Diederik Van Hoorebeke
  */
 
-namespace dowadidicrafthash\hash\twigextensions;
+namespace dowadidicrafthash\crafthash\twigextensions;
 
-use dowadidicrafthash\hash\Hash;
+use dowadidicrafthash\crafthash\CraftHash;
 
 use Craft;
 
 /**
  * @author    Diederik Van Hoorebeke
- * @package   Hash
+ * @package   CraftHash
  * @since     0.0.1
  */
-class HashTwigExtension extends \Twig_Extension
+class CraftHashTwigExtension extends \Twig_Extension
 {
 
     public function getName()
     {
-        return 'Hash';
+        return 'CraftHash';
     }
 
     public function getFunctions()

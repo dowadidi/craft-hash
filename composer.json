@@ -1,5 +1,5 @@
 {
-    "name": "dowadidi/hash",
+    "name": "dowadidi/craft-hash",
     "description": "Twig filter for hashing. ",
     "type": "craft-plugin",
     "version": "0.0.1",
@@ -8,7 +8,7 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "hash"
+        "craft-hash"
     ],
     "support": {
         "docs": "https://github.com/dowadidi/craft-hash/blob/master/README.md",
@@ -26,15 +26,15 @@
     },
     "autoload": {
         "psr-4": {
-          "dowadidi\\hash\\": "src/"
+          "dowadidicrafthash\\crafthash\\": "src/"
         }
     },
     "extra": {
-        "name": "Hash",
-        "handle": "hash",
+        "name": "Craft-Hash",
+        "handle": "craft-hash",
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/dowadidi/craft-hash/master/CHANGELOG.md",
-        "class": "dowadidi\\hash\\Hash"
+        "class": "dowadidicrafthash\\crafthash\\CraftHash"
     }
 }
